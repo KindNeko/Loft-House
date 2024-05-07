@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+project.zip
+gulp
+app
+gulpfile.js
+package.json
