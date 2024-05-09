@@ -19,56 +19,63 @@
     <div class="wrapper">
       <div class="menu-overlay"></div>
       <header class="header">
-  <div class="container">
-    <div class="header__inner flex-line">
-      <img class="logo" src="images/logo.svg" alt="Логотип" />
-      <nav class="menu">
-  <div class="menu__btn">
-    <span></span><span></span><span></span><span></span>
-  </div>
-  <ul class="menu__list flex-line">
-    <li class="menu__item">
-      <a href="#" class="menu__link">О комплексе</a>
-    </li>
-    <li class="menu__item">
-      <a href="#" class="menu__link">Район</a>
-    </li>
-    <li class="menu__item">
-      <a href="#" class="menu__link">Каталог квартир</a>
-    </li>
-    <li class="menu__item">
-      <a href="#" class="menu__link">Ипотека</a>
-    </li>
-    <li class="menu__item">
-      <a href="#" class="menu__link">Контакты</a>
-    </li>
-  </ul>
-</nav>
+        <div class="container">
+          <div class="header__inner flex-line">
+            <img class="logo" src="images/logo.svg" alt="Логотип" />
+            <nav class="menu">
+              <div class="menu__btn">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <ul class="menu__list flex-line">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О комплексе</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Район</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Каталог квартир</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Ипотека</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-    </div>
+          <div class="header__content-box">
+            <h1 class="header__title">Жилой комплекс в историческом центре</h1>
+            <img class="header__img" src="images/mouse.svg" alt="Мышь" />
 
-    <div class="header__content-box">
-      <h1 class="header__title">Жилой комплекс в историческом центре</h1>
-      <img class="header__img" src="images/mouse.svg" alt="Мышь" />
-
-      <div class="header__contact flex-line">
-        <p class="header__text">
-          <img class="header__img-contact" src="images/marker.svg" alt="" />
-          Наб. реки Фонтанки 10-15
-        </p>
-        <p class="header__text">
-          <img class="header__img-contact" src="images/phone-call.svg" alt="" />
-          8 (812) 123-45-67
-        </p>
-      </div>
-    </div>
-  </div>
-</header>
+            <div class="header__contact flex-line">
+              <p class="header__text">
+                <img
+                  class="header__img-contact"
+                  src="images/marker.svg"
+                  alt=""
+                />
+                Наб. реки Фонтанки 10-15
+              </p>
+              <p class="header__text">
+                <img
+                  class="header__img-contact"
+                  src="images/phone-call.svg"
+                  alt=""
+                />
+                8 (812) 123-45-67
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <main class="main">
         <section class="testimonials">
           <div class="container">
-            <ul class="testimonials__list flex-line">
+            <ul class="testimonials__list">
               <li class="testimonials__item">
                 <img
                   src="images/testimonials-1.svg"
@@ -161,31 +168,37 @@
                 </p>
               </div>
               <form action="#" class="form grid-columns-2">
-  <input type="text" class="form__input" placeholder="Ваше имя" />
-  <input type="text" class="form__input" placeholder="Ваш телефон" />
-  <p class="form__text">
-    *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
-  </p>
-  <button class="form__btn">Посмотреть район</button>
-</form>
-
+                <input type="text" class="form__input" placeholder="Ваше имя" />
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Ваш телефон"
+                />
+                <p class="form__text">
+                  *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+                  базу.
+                </p>
+                <button class="form__btn">Посмотреть район</button>
+              </form>
             </div>
           </div>
         </section>
 
         <sectoion class="video">
           <div class="container">
-            <a
-              href="https://www.youtube.com/watch?v=HsOkBQfsIEk"
-              class="video__link"
-            >
-              <img
-                src="images/play-button.svg"
-                alt="play"
-                class="video__icon"
-              />
-              <img src="images/video.jpg" alt="video" class="video__image" />
-            </a>
+            <div class="video__box">
+              <a
+                href="https://www.youtube.com/watch?v=HsOkBQfsIEk"
+                class="video__link"
+              >
+                <img
+                  src="images/play-button.svg"
+                  alt="play"
+                  class="video__icon"
+                />
+                <img src="images/video.jpg" alt="video" class="video__image" />
+              </a>
+            </div>
           </div>
         </sectoion>
 
@@ -219,8 +232,8 @@
         </section>
       </main>
       <footer class="footer">
-    <h2>footer</h2>
-</footer>
+        <h2>footer</h2>
+      </footer>
     </div>
 
     <script src="js/main.js"></script>
