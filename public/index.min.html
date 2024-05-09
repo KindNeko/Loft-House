@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -67,7 +66,157 @@
 </header>
 
       <main class="main">
-        <div class="container"></div>
+        <section class="testimonials">
+          <div class="container">
+            <ul class="testimonials__list flex-line">
+              <li class="testimonials__item">
+                <img
+                  src="images/testimonials-1.svg"
+                  alt=""
+                  class="testimonials__img"
+                />
+                <p class="testimonials__text">
+                  Рядом исторические парки и скверы
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <img
+                  src="images/testimonials-2.svg"
+                  alt=""
+                  class="testimonials__img"
+                />
+                <p class="testimonials__text">Полностью обустроенный</p>
+              </li>
+              <li class="testimonials__item">
+                <img
+                  src="images/testimonials-3.svg"
+                  alt=""
+                  class="testimonials__img"
+                />
+                <p class="testimonials__text">10 фонтанов на территории</p>
+              </li>
+              <li class="testimonials__item">
+                <img
+                  src="images/testimonials-4.svg"
+                  alt=""
+                  class="testimonials__img"
+                />
+                <p class="testimonials__text">6 км велодорожек</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="appartments">
+          <div class="container">
+            <h2 class="appartments__title title-content">Наши квартиры</h2>
+            <div class="appartments__box grid-columns-2">
+              <div class="appartments__card">
+                <p class="appartments__text">Пентхаус “Loft Олимп”</p>
+                <img
+                  src="images/appartments-1.jpg"
+                  alt=""
+                  class="appartments__img"
+                />
+              </div>
+              <div class="appartments__card">
+                <p class="appartments__text">Апартаменты “Nice Loft”</p>
+                <img
+                  src="images/appartments-2.jpg"
+                  alt=""
+                  class="appartments__img"
+                />
+              </div>
+              <div class="appartments__card">
+                <p class="appartments__text">Апартаменты “Loft Studio”</p>
+                <img
+                  src="images/appartments-3.jpg"
+                  alt=""
+                  class="appartments__img"
+                />
+              </div>
+              <div class="appartments__card">
+                <p class="appartments__text">Loft квартира “Престиж”</p>
+                <img
+                  src="images/appartments-4.jpg"
+                  alt=""
+                  class="appartments__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="container">
+            <h2 class="cta__title title-content">Хотите посмотреть?</h2>
+            <div class="cta__wrapper grid-columns-2">
+              <div class="cta__box-content">
+                <p class="cta__text">
+                  ЖК LoftHouse – это проект бизнес-класса, расположенный в
+                  центре города, на Наб. реки Фонтанки 10-15. Комплекс
+                  предлагает своим жильцам квартиры площадью от 40 до 170 кв. м.
+                  В здании будет три секции, в которых разместится всего 56
+                  квартир.
+                </p>
+              </div>
+              <form action="#" class="form grid-columns-2">
+  <input type="text" class="form__input" placeholder="Ваше имя" />
+  <input type="text" class="form__input" placeholder="Ваш телефон" />
+  <p class="form__text">
+    *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+  </p>
+  <button class="form__btn">Посмотреть район</button>
+</form>
+
+            </div>
+          </div>
+        </section>
+
+        <sectoion class="video">
+          <div class="container">
+            <a
+              href="https://www.youtube.com/watch?v=HsOkBQfsIEk"
+              class="video__link"
+            >
+              <img
+                src="images/play-button.svg"
+                alt="play"
+                class="video__icon"
+              />
+              <img src="images/video.jpg" alt="video" class="video__image" />
+            </a>
+          </div>
+        </sectoion>
+
+        <section class="map">
+          <div class="container">
+            <h2 class="map__title title-content">Район на карте</h2>
+            <div class="map__map">
+              <div class="map__block" id="map"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-form">
+          <div class="container">
+            <h2 class="cta-form__title title-content">Есть вопросы?</h2>
+            <form action="#" class="form flex-line cta-form__form">
+              <p class="form__text cta-form__text">
+                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+                базу.
+              </p>
+              <input type="text" class="form__input" placeholder="Ваше имя" />
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Ваш телефон"
+              />
+
+              <button class="form__btn">Посмотреть район</button>
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer">
     <h2>footer</h2>
