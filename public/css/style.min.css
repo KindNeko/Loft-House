@@ -512,6 +512,37 @@ a {
   height: 50px;
   background: #d4c17f;
 }
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.accordion__faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+.accordion__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__question svg {
+  fill: #fff;
+}
+.accordion__question h3 {
+  font-size: 20px;
+}
+.accordion__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
 .header {
   min-height: 100vh;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../images/header-bg.jpg");
@@ -549,6 +580,7 @@ a {
   font-family: "Raleway", sans-serif;
   background-color: #2d343c;
   padding: 60px 0;
+  max-height: 800px;
 }
 .col-wrapper {
   align-items: flex-start;
@@ -680,7 +712,7 @@ a {
 }
 .map__map {
   height: 358px;
-  width: 100%;
+  max-width: 100%;
   background-color: grey;
 }
 .cta-form {
@@ -695,6 +727,20 @@ a {
 }
 .cta-form__form {
   gap: 0 30px;
+}
+.accordion__faq.active .accordion__answer {
+  max-height: 300px;
+}
+.accordion__faq.active svg {
+  transform: rotate(180deg);
+}
+svg {
+  transition: transform 0.5s ease-in;
+}
+@media (max-width: 768px) {
+  .col-wrapper {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .header__content-box {
@@ -745,6 +791,29 @@ a {
     transform: translateY(0%);
   }
 }
+@media (max-width: 768px) {
+  .accordion {
+    display: block;
+    text-align: center;
+  }
+  .accordion__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .info-list {
+    text-align: left;
+    padding-top: 20px;
+  }
+  .about-list {
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 376px) {
+  body {
+    font-size: 14px;
+  }
+}
 @media (max-width: 992px) {
   .title-content {
     text-align: center;
@@ -762,11 +831,6 @@ a {
   .appartments__card {
     justify-self: center;
   }
-}
-@media (max-width: 768px) {
-  .testimonials__img {
-    margin-bottom: 30px;
-  }
   .cta__wrapper {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -776,6 +840,16 @@ a {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials__img {
+    margin-bottom: 30px;
+  }
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
