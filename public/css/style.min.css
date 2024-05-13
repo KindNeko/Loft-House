@@ -512,7 +512,7 @@ a {
   height: 50px;
   background: #d4c17f;
 }
-.accordion {
+.accordeon {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -520,25 +520,25 @@ a {
   align-items: center;
   display: none;
 }
-.accordion__faq {
+.accordeon__faq {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
   cursor: pointer;
 }
-.accordion__question {
+.accordeon__question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.accordion__question svg {
+.accordeon__question svg {
   fill: #fff;
 }
-.accordion__question h3 {
+.accordeon__question h3 {
   font-size: 20px;
 }
-.accordion__answer {
+.accordeon__answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
@@ -703,6 +703,9 @@ a {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
 }
+.video__link--show {
+  display: none;
+}
 .video__image {
   max-width: 100%;
 }
@@ -713,6 +716,12 @@ a {
   transform: translate(-50%, -50%);
   z-index: 2;
   transition: transform 0.2s ease-in;
+}
+.video__iframe {
+  opacity: 0;
+}
+.video__iframe--show {
+  opacity: 1;
 }
 .map {
   padding: 180px 0;
@@ -735,10 +744,10 @@ a {
 .cta-form__form {
   gap: 0 30px;
 }
-.accordion__faq.active .accordion__answer {
+.accordeon__faq.active .accordeon__answer {
   max-height: 300px;
 }
-.accordion__faq.active svg {
+.accordeon__faq.active svg {
   transform: rotate(180deg);
 }
 svg {
@@ -799,11 +808,11 @@ svg {
   }
 }
 @media (max-width: 768px) {
-  .accordion {
+  .accordeon {
     display: block;
     text-align: center;
   }
-  .accordion__title {
+  .accordeon__title {
     font-size: 18px;
     margin-bottom: 20px;
   }
