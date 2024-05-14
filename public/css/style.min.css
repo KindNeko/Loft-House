@@ -130,14 +130,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -296,9 +296,9 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -319,8 +319,8 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -335,7 +335,7 @@ input[type=radio] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -347,8 +347,8 @@ input[type=search] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 /**
@@ -493,12 +493,14 @@ a {
   width: 255px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.2);
-  text-align: center;
+  font-size: 16px;
+  color: #fff;
   border: none;
 }
 .form__input::placeholder {
   color: #bebebe;
   font-size: 14px;
+  text-align: center;
 }
 .form__text {
   line-height: 1.24;
@@ -512,7 +514,7 @@ a {
   height: 50px;
   background: #d4c17f;
 }
-.accordion {
+.accordeon {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -520,32 +522,38 @@ a {
   align-items: center;
   display: none;
 }
-.accordion__faq {
+.accordeon__faq {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
   cursor: pointer;
 }
-.accordion__question {
+.accordeon__question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.accordion__question svg {
+.accordeon__question svg {
   fill: #fff;
 }
-.accordion__question h3 {
+.accordeon__question h3 {
   font-size: 20px;
 }
-.accordion__answer {
+.accordeon__answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
 .header {
   min-height: 100vh;
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../images/header-bg.jpg");
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url("../images/header-bg.jpg");
 }
 .header__inner {
   padding-top: 30px;
@@ -663,7 +671,14 @@ a {
 .cta {
   padding: 180px 0;
   position: relative;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../images/cta-bg.jpg"), #c4c4c4;
+  background: linear-gradient(
+      180deg,
+      #242b33 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    url("../images/cta-bg.jpg"), #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -703,6 +718,12 @@ a {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
 }
+.video__link--show {
+  display: none;
+}
+.video__box {
+  max-width: 100%;
+}
 .video__image {
   max-width: 100%;
 }
@@ -735,10 +756,10 @@ a {
 .cta-form__form {
   gap: 0 30px;
 }
-.accordion__faq.active .accordion__answer {
+.accordeon__faq.active .accordeon__answer {
   max-height: 300px;
 }
-.accordion__faq.active svg {
+.accordeon__faq.active svg {
   transform: rotate(180deg);
 }
 svg {
@@ -799,11 +820,11 @@ svg {
   }
 }
 @media (max-width: 768px) {
-  .accordion {
+  .accordeon {
     display: block;
     text-align: center;
   }
-  .accordion__title {
+  .accordeon__title {
     font-size: 18px;
     margin-bottom: 20px;
   }
