@@ -12,8 +12,6 @@
 		<h4>Что используется:</h4>
 		<ol id="residential-complex__list">
 			<li id="residential-complex__item">
-			</li>
-			<li id="residential-complex__item">
 			 Gulp - <a href="https://github.com/KindNeko/gulp" target="_blank">ссылка на мою сборку Gulp</a> 
 			</li>
 			<li id="residential-complex__item">
