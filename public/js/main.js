@@ -1,6 +1,4 @@
 "use strict";
-
-const header = document.querySelector(".header");
 class Toggle {
   list;
   open;
