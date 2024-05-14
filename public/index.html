@@ -1,438 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Loft House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="menu-overlay"></div>
-      <header class="header">
-        <div class="container">
-          <div class="header__inner flex-line">
-            <img class="logo" src="images/logo.svg" alt="Логотип" />
-            <nav class="menu">
-              <div class="menu__btn">
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <ul class="menu__list flex-line">
-                <li class="menu__item">
-                  <a href="#section-1" class="menu__link">О комплексе</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#section-4" class="menu__link">Район</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#section-2" class="menu__link">Каталог квартир</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Ипотека</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#section-5" class="menu__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__content-box">
-            <h1 class="header__title">Жилой комплекс в историческом центре</h1>
-            <img class="header__img" src="images/mouse.svg" alt="Мышь" />
-            <div class="header__contact flex-line">
-              <p class="header__text">
-                <img
-                  class="header__img-contact"
-                  src="images/marker.svg"
-                  alt=""
-                />
-                Наб. реки Фонтанки 10-15
-              </p>
-              <p class="header__text">
-                <img
-                  class="header__img-contact"
-                  src="images/phone-call.svg"
-                  alt=""
-                />
-                8 (812) 123-45-67
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="main">
-        <section class="testimonials" id="section-1">
-          <div class="container">
-            <ul class="testimonials__list">
-              <li class="testimonials__item">
-                <img
-                  src="images/testimonials-1.svg"
-                  alt=""
-                  class="testimonials__img"
-                />
-                <p class="testimonials__text">
-                  Рядом исторические парки и скверы
-                </p>
-              </li>
-              <li class="testimonials__item">
-                <img
-                  src="images/testimonials-2.svg"
-                  alt=""
-                  class="testimonials__img"
-                />
-                <p class="testimonials__text">Полностью обустроенный</p>
-              </li>
-              <li class="testimonials__item">
-                <img
-                  src="images/testimonials-3.svg"
-                  alt=""
-                  class="testimonials__img"
-                />
-                <p class="testimonials__text">10 фонтанов на территории</p>
-              </li>
-              <li class="testimonials__item">
-                <img
-                  src="images/testimonials-4.svg"
-                  alt=""
-                  class="testimonials__img"
-                />
-                <p class="testimonials__text">6 км велодорожек</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="appartments" id="section-2">
-          <div class="container">
-            <h2 class="appartments__title title-content">Наши квартиры</h2>
-            <div class="appartments__box grid-columns-2">
-              <div class="appartments__card">
-                <p class="appartments__text">Пентхаус “Loft Олимп”</p>
-                <img
-                  src="images/appartments-1.jpg"
-                  alt=""
-                  class="appartments__img"
-                />
-              </div>
-              <div class="appartments__card">
-                <p class="appartments__text">Апартаменты “Nice Loft”</p>
-                <img
-                  src="images/appartments-2.jpg"
-                  alt=""
-                  class="appartments__img"
-                />
-              </div>
-              <div class="appartments__card">
-                <p class="appartments__text">Апартаменты “Loft Studio”</p>
-                <img
-                  src="images/appartments-3.jpg"
-                  alt=""
-                  class="appartments__img"
-                />
-              </div>
-              <div class="appartments__card">
-                <p class="appartments__text">Loft квартира “Престиж”</p>
-                <img
-                  src="images/appartments-4.jpg"
-                  alt=""
-                  class="appartments__img"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="cta" id="section-3">
-          <div class="container">
-            <h2 class="cta__title title-content">Хотите посмотреть?</h2>
-            <div class="cta__wrapper grid-columns-2">
-              <div class="cta__box-content">
-                <p class="cta__text">
-                  ЖК LoftHouse – это проект бизнес-класса, расположенный в
-                  центре города, на Наб. реки Фонтанки 10-15. Комплекс
-                  предлагает своим жильцам квартиры площадью от 40 до 170 кв. м.
-                  В здании будет три секции, в которых разместится всего 56
-                  квартир.
-                </p>
-              </div>
-              <form action="#" class="form grid-columns-2">
-                <input type="text" class="form__input" placeholder="Ваше имя" />
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Ваш телефон"
-                />
-                <p class="form__text">
-                  *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
-                  базу.
-                </p>
-                <button class="form__btn">Посмотреть район</button>
-              </form>
-            </div>
-          </div>
-        </section>
-        <sectoion class="video" id="">
-          <div class="container">
-            <div class="video__box">
-              <a
-                href="https://www.youtube.com/watch?v=HsOkBQfsIEk"
-                class="video__link"
-              >
-                <img
-                  src="images/play-button.svg"
-                  alt="play"
-                  class="video__icon"
-                />
-                <img src="images/video.jpg" alt="video" class="video__image" />
-              </a>
-            </div>
-          </div>
-        </sectoion>
-        <section class="map" id="section-4">
-          <div class="container">
-            <h2 class="map__title title-content">Район на карте</h2>
-            <div class="map__map" id="map"></div>
-          </div>
-        </section>
-        <section class="cta-form" id="section-5">
-          <div class="container">
-            <h2 class="cta-form__title title-content">Есть вопросы?</h2>
-            <form action="#" class="form flex-line cta-form__form">
-              <p class="form__text cta-form__text">
-                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
-                базу.
-              </p>
-              <input type="text" class="form__input" placeholder="Ваше имя" />
-              <input
-                type="text"
-                class="form__input"
-                placeholder="Ваш телефон"
-              />
-              <button class="form__btn">Посмотреть район</button>
-            </form>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <section class="col">
-          <div class="container">
-            <div class="accordeon">
-              <h2 class="accordeon__title">FAQ</h2>
-              <img class="logo" src="images/logo.svg" alt="Логотип" />
-              <div class="accordeon__faq">
-                <div class="accordeon__question">
-                  <h3>Сервис и услуги</h3>
-                  <svg with="15" height="10" viewBox="0 0 42 25">
-                    <path
-                      d="M3 3L21 21L39 3"
-                      stroke="white"
-                      stroke-with="7"
-                      stroke-linecap="round"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="accordeon__answer">
-                  <ul class="info-list">
-                    <li class="info-list__item">
-                      <a href="#" class="info-list__link"
-                        >Поселение и переезд</a
-                      >
-                    </li>
-                    <li class="info-list__item">
-                      <a href="#" class="info-list__link">Сервисные услуги</a>
-                    </li>
-                    <li class="info-list__item">
-                      <a href="#" class="info-list__link"
-                        >Экологическая устойчивость</a
-                      >
-                    </li>
-                    <li class="info-list__item">
-                      <a href="#" class="info-list__link"
-                        >Инвестиционные возможности</a
-                      >
-                    </li>
-                    <li class="info-list__item">
-                      <a href="#" class="info-list__link"
-                        >Программа лояльности
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="accordeon__faq">
-                <div class="accordeon__question">
-                  <h3>О нас</h3>
-                  <svg with="15" height="10" viewBox="0 0 42 25">
-                    <path
-                      d="M3 3L21 21L39 3"
-                      stroke="white"
-                      stroke-with="7"
-                      stroke-linecap="round"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="accordeon__answer">
-                  <ul class="about-list">
-                    <li class="about-list__item">
-                      <p class="about-list__text">
-                        Адрес: Наб. реки Фонтанки 10-15
-                      </p>
-                    </li>
-                    <li class="about-list__item">
-                      <p class="about-list__text">Телефон: 8 (812) 123-45-67</p>
-                    </li>
-                    <li class="about-list__item">
-                      <p class="about-list__text">
-                        Отдел продаж: 10:00 - 20:00
-                      </p>
-                    </li>
-                    <li class="about-list__item">
-                      <p class="about-list__text">
-                        E-mail: <span class="accent">vip@lofthouse.ru</span>
-                      </p>
-                    </li>
-                    <li class="about-list__item">
-                      <a href="#" class="about-list__link">
-                        <img
-                          src="images/youtube.svg"
-                          alt=""
-                          class="about-list__images"
-                        />
-                      </a>
-                      <a href="#" class="about-list__link">
-                        <img
-                          src="images/vk.svg"
-                          alt=""
-                          class="about-list__images"
-                        />
-                      </a>
-                      <a href="#" class="about-list__link">
-                        <img
-                          src="images/facebook.svg"
-                          alt=""
-                          class="about-list__images"
-                        />
-                      </a>
-                      <a href="#" class="about-list__link">
-                        <img
-                          src="images/instagram.svg"
-                          alt=""
-                          class="about-list__images"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-wrapper flex-line">
-              <img class="logo" src="images/logo.svg" alt="Логотип" />
-              <nav class="menu-footer">
-                <ul class="menu-footer__list">
-                  <li class="menu-footer__item">
-                    <a href="#section-1" class="menu-footer__link"
-                      >О комплексе</a
-                    >
-                  </li>
-                  <li class="menu-footer__item">
-                    <a href="#section-4" class="menu-footer__link">Район</a>
-                  </li>
-                  <li class="menu-footer__item">
-                    <a href="#section-2" class="menu-footer__link"
-                      >Каталог квартир</a
-                    >
-                  </li>
-                  <li class="menu-footer__item">
-                    <a href="#" class="menu-footer__link">Ипотека</a>
-                  </li>
-                  <li class="menu-footer__item">
-                    <a href="#section-5" class="menu-footer__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <ul class="info-list">
-                <li class="info-list__item">
-                  <a href="#" class="info-list__link">Поселение и переезд</a>
-                </li>
-                <li class="info-list__item">
-                  <a href="#" class="info-list__link">Сервисные услуги</a>
-                </li>
-                <li class="info-list__item">
-                  <a href="#" class="info-list__link"
-                    >Экологическая устойчивость</a
-                  >
-                </li>
-                <li class="info-list__item">
-                  <a href="#" class="info-list__link"
-                    >Инвестиционные возможности</a
-                  >
-                </li>
-                <li class="info-list__item">
-                  <a href="#" class="info-list__link">Программа лояльности </a>
-                </li>
-              </ul>
-              <ul class="about-list">
-                <li class="about-list__item">
-                  <p class="about-list__text">
-                    Адрес: Наб. реки Фонтанки 10-15
-                  </p>
-                </li>
-                <li class="about-list__item">
-                  <p class="about-list__text">Телефон: 8 (812) 123-45-67</p>
-                </li>
-                <li class="about-list__item">
-                  <p class="about-list__text">Отдел продаж: 10:00 - 20:00</p>
-                </li>
-                <li class="about-list__item">
-                  <p class="about-list__text">
-                    E-mail: <span class="accent">vip@lofthouse.ru</span>
-                  </p>
-                </li>
-                <li class="about-list__item">
-                  <a href="#" class="about-list__link">
-                    <img
-                      src="images/youtube.svg"
-                      alt=""
-                      class="about-list__images"
-                    />
-                  </a>
-                  <a href="#" class="about-list__link">
-                    <img
-                      src="images/vk.svg"
-                      alt=""
-                      class="about-list__images"
-                    />
-                  </a>
-                  <a href="#" class="about-list__link">
-                    <img
-                      src="images/facebook.svg"
-                      alt=""
-                      class="about-list__images"
-                    />
-                  </a>
-                  <a href="#" class="about-list__link">
-                    <img
-                      src="images/instagram.svg"
-                      alt=""
-                      class="about-list__images"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </footer>
-    </div>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=e6199316-6879-4ea4-b9b1-c3c6ac3f06fe&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en">  <head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width,initial-scale=1">    <title>Loft House</title>    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.min.css">  </head>  <body>    <div class="wrapper">      <div class="menu-overlay"></div>      <header class="header">  <div class="container">    <div class="header__inner flex-line">      <img class="logo" src="images/logo.svg" alt="Логотип">      <nav class="menu">  <div class="menu__btn">    <span></span><span></span><span></span><span></span>  </div>  <ul class="menu__list flex-line">    <li class="menu__item">      <a href="#section-1" class="menu__link">О комплексе</a>    </li>    <li class="menu__item">      <a href="#section-4" class="menu__link">Район</a>    </li>    <li class="menu__item">      <a href="#section-2" class="menu__link">Каталог квартир</a>    </li>    <li class="menu__item">      <a href="#" class="menu__link">Ипотека</a>    </li>    <li class="menu__item">      <a href="#section-5" class="menu__link">Контакты</a>    </li>  </ul></nav>    </div>    <div class="header__content-box">      <h1 class="header__title">Жилой комплекс в историческом центре</h1>      <img class="header__img" src="images/mouse.svg" alt="Мышь">      <div class="header__contact flex-line">        <p class="header__text">          <img class="header__img-contact" src="images/marker.svg" alt="">          Наб. реки Фонтанки 10-15        </p>        <p class="header__text">          <img class="header__img-contact" src="images/phone-call.svg" alt="">          8 (812) 123-45-67        </p>      </div>    </div>  </div></header>      <main class="main">        <section class="testimonials" id="section-1">          <div class="container">            <ul class="testimonials__list">              <li class="testimonials__item">                <img src="images/testimonials-1.svg" alt="" class="testimonials__img">                <p class="testimonials__text">                  Рядом исторические парки и скверы                </p>              </li>              <li class="testimonials__item">                <img src="images/testimonials-2.svg" alt="" class="testimonials__img">                <p class="testimonials__text">Полностью обустроенный</p>              </li>              <li class="testimonials__item">                <img src="images/testimonials-3.svg" alt="" class="testimonials__img">                <p class="testimonials__text">10 фонтанов на территории</p>              </li>              <li class="testimonials__item">                <img src="images/testimonials-4.svg" alt="" class="testimonials__img">                <p class="testimonials__text">6 км велодорожек</p>              </li>            </ul>          </div>        </section>        <section class="appartments" id="section-2">          <div class="container">            <h2 class="appartments__title title-content">Наши квартиры</h2>            <div class="appartments__box grid-columns-2">              <div class="appartments__card">                <p class="appartments__text">Пентхаус “Loft Олимп”</p>                <picture><source srcset="images/appartments-1.webp" type="image/webp"><img src="images/appartments-1.jpg" alt="" class="appartments__img"></picture>              </div>              <div class="appartments__card">                <p class="appartments__text">Апартаменты “Nice Loft”</p>                <picture><source srcset="images/appartments-2.webp" type="image/webp"><img src="images/appartments-2.jpg" alt="" class="appartments__img"></picture>              </div>              <div class="appartments__card">                <p class="appartments__text">Апартаменты “Loft Studio”</p>                <picture><source srcset="images/appartments-3.webp" type="image/webp"><img src="images/appartments-3.jpg" alt="" class="appartments__img"></picture>              </div>              <div class="appartments__card">                <p class="appartments__text">Loft квартира “Престиж”</p>                <picture><source srcset="images/appartments-4.webp" type="image/webp"><img src="images/appartments-4.jpg" alt="" class="appartments__img"></picture>              </div>            </div>          </div>        </section>        <section class="cta" id="section-3">          <div class="container">            <h2 class="cta__title title-content">Хотите посмотреть?</h2>            <div class="cta__wrapper grid-columns-2">              <div class="cta__box-content">                <p class="cta__text">                  ЖК LoftHouse – это проект бизнес-класса, расположенный в                  центре города, на Наб. реки Фонтанки 10-15. Комплекс                  предлагает своим жильцам квартиры площадью от 40 до 170 кв. м.                  В здании будет три секции, в которых разместится всего 56                  квартир.                </p>              </div>              <form action="#" class="form grid-columns-2">  <input type="text" class="form__input" placeholder="Ваше имя">  <input type="text" class="form__input" placeholder="Ваш телефон">  <p class="form__text">    *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.  </p>  <button class="form__btn">Посмотреть район</button></form>            </div>          </div>        </section>        <sectoion class="video" id="">          <div class="container">            <div class="video__box">              <a href="https://www.youtube.com/watch?v=HsOkBQfsIEk" class="video__link">                <img src="images/play-button.svg" alt="play" class="video__icon">                <picture><source srcset="images/video.webp" type="image/webp"><img src="images/video.jpg" alt="video" class="video__image"></picture>              </a>            </div>          </div>        </sectoion>        <section class="map" id="section-4">          <div class="container">            <h2 class="map__title title-content">Район на карте</h2>            <div class="map__map" id="map"></div>          </div>        </section>        <section class="cta-form" id="section-5">          <div class="container">            <h2 class="cta-form__title title-content">Есть вопросы?</h2>            <form action="#" class="form flex-line cta-form__form">              <p class="form__text cta-form__text">                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в                базу.              </p>              <input type="text" class="form__input" placeholder="Ваше имя">              <input type="text" class="form__input" placeholder="Ваш телефон">              <button class="form__btn">Посмотреть район</button>            </form>          </div>        </section>      </main>      <footer class="footer">  <section class="col">    <div class="container">      <div class="accordeon">  <h2 class="accordeon__title">FAQ</h2>  <img class="logo" src="images/logo.svg" alt="Логотип">  <div class="accordeon__faq">    <div class="accordeon__question">      <h3>Сервис и услуги</h3>      <svg with="15" height="10" viewBox="0 0 42 25">        <path d="M3 3L21 21L39 3" stroke="white" stroke-with="7" stroke-linecap="round"></path>      </svg>    </div>    <div class="accordeon__answer">      <ul class="info-list">        <li class="info-list__item">          <a href="#" class="info-list__link">Поселение и переезд</a>        </li>        <li class="info-list__item">          <a href="#" class="info-list__link">Сервисные услуги</a>        </li>        <li class="info-list__item">          <a href="#" class="info-list__link">Экологическая устойчивость</a>        </li>        <li class="info-list__item">          <a href="#" class="info-list__link">Инвестиционные возможности</a>        </li>        <li class="info-list__item">          <a href="#" class="info-list__link">Программа лояльности </a>        </li>      </ul>    </div>  </div>  <div class="accordeon__faq">    <div class="accordeon__question">      <h3>О нас</h3>      <svg with="15" height="10" viewBox="0 0 42 25">        <path d="M3 3L21 21L39 3" stroke="white" stroke-with="7" stroke-linecap="round"></path>      </svg>    </div>    <div class="accordeon__answer">      <ul class="about-list">        <li class="about-list__item">          <p class="about-list__text">Адрес: Наб. реки Фонтанки 10-15</p>        </li>        <li class="about-list__item">          <p class="about-list__text">Телефон: 8 (812) 123-45-67</p>        </li>        <li class="about-list__item">          <p class="about-list__text">Отдел продаж: 10:00 - 20:00</p>        </li>        <li class="about-list__item">          <p class="about-list__text">            E-mail: <span class="accent">vip@lofthouse.ru</span>          </p>        </li>        <li class="about-list__item">          <a href="#" class="about-list__link">            <img src="images/youtube.svg" alt="" class="about-list__images">          </a>          <a href="#" class="about-list__link">            <img src="images/vk.svg" alt="" class="about-list__images">          </a>          <a href="#" class="about-list__link">            <img src="images/facebook.svg" alt="" class="about-list__images">          </a>          <a href="#" class="about-list__link">            <img src="images/instagram.svg" alt="" class="about-list__images">          </a>        </li>      </ul>    </div>  </div></div>      <div class="col-wrapper flex-line">        <img class="logo" src="images/logo.svg" alt="Логотип">        <nav class="menu-footer">          <ul class="menu-footer__list">            <li class="menu-footer__item">              <a href="#section-1" class="menu-footer__link">О комплексе</a>            </li>            <li class="menu-footer__item">              <a href="#section-4" class="menu-footer__link">Район</a>            </li>            <li class="menu-footer__item">              <a href="#section-2" class="menu-footer__link">Каталог квартир</a>            </li>            <li class="menu-footer__item">              <a href="#" class="menu-footer__link">Ипотека</a>            </li>            <li class="menu-footer__item">              <a href="#section-5" class="menu-footer__link">Контакты</a>            </li>          </ul>        </nav>        <ul class="info-list">          <li class="info-list__item">            <a href="#" class="info-list__link">Поселение и переезд</a>          </li>          <li class="info-list__item">            <a href="#" class="info-list__link">Сервисные услуги</a>          </li>          <li class="info-list__item">            <a href="#" class="info-list__link">Экологическая устойчивость</a>          </li>          <li class="info-list__item">            <a href="#" class="info-list__link">Инвестиционные возможности</a>          </li>          <li class="info-list__item">            <a href="#" class="info-list__link">Программа лояльности </a>          </li>        </ul>        <ul class="about-list">          <li class="about-list__item">            <p class="about-list__text">Адрес: Наб. реки Фонтанки 10-15</p>          </li>          <li class="about-list__item">            <p class="about-list__text">Телефон: 8 (812) 123-45-67</p>          </li>          <li class="about-list__item">            <p class="about-list__text">Отдел продаж: 10:00 - 20:00</p>          </li>          <li class="about-list__item">            <p class="about-list__text">              E-mail: <span class="accent">vip@lofthouse.ru</span>            </p>          </li>          <li class="about-list__item">            <a href="#" class="about-list__link">              <img src="images/youtube.svg" alt="" class="about-list__images">            </a>            <a href="#" class="about-list__link">              <img src="images/vk.svg" alt="" class="about-list__images">            </a>            <a href="#" class="about-list__link">              <img src="images/facebook.svg" alt="" class="about-list__images">            </a>            <a href="#" class="about-list__link">              <img src="images/instagram.svg" alt="" class="about-list__images">            </a>          </li>        </ul>      </div>    </div>  </section></footer>    </div>    <script src="https://api-maps.yandex.ru/2.1/?apikey=e6199316-6879-4ea4-b9b1-c3c6ac3f06fe&lang=ru_RU" type="text/javascript"></script>    <script src="js/main.js"></script>  </body></html>

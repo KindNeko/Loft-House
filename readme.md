@@ -12,7 +12,6 @@
 		<h4>Что используется:</h4>
 		<ol id="residential-complex__list">
 			<li id="residential-complex__item">
-			 Макет - <a href="https://www.figma.com/file/69nIOtIXNTav3FxvlQ7jLm/Loft-House---%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B?type=design&node-id=0%3A1&t=dffRoi3WQzNnyaOa-1" target="_blank">ссылка на макет</a> 
 			</li>
 			<li id="residential-complex__item">
 			 Gulp - <a href="https://github.com/KindNeko/gulp" target="_blank">ссылка на мою сборку Gulp</a> 
