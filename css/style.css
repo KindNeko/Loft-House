@@ -595,11 +595,10 @@ a {
   -webkit-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
 }
-.no-webp .header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("../images/header-bg.jpg");
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../images/header-bg.jpg"); }
 .header {
   min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("../images/header-bg.webp");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../images/header-bg.webp");
 }
 .header__inner {
   padding-top: 30px;
@@ -1033,4 +1032,3 @@ svg {
     padding-bottom: 90px;
   }
 }
-.webp .header { background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url(../images/header-bg.webp); background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(../images/header-bg.webp); }
