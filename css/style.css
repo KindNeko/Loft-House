@@ -611,7 +611,7 @@ a {
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url("../images/header-webp.jpg");
+    url("../images/header-bg.webp");
 }
 .header {
   min-height: 100vh;
