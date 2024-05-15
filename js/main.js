@@ -52,9 +52,7 @@ class Menu extends Toggle {
     this.menuList.addEventListener("click", (e) => {
       e.preventDefault();
       const href = e.target.getAttribute("href");
-      document.querySelector(href).scrollIntoView({
-        behavior: "smooth",
-      });
+      document.querySelector(href).scrollIntoView({ behavior: "smooth" });
     });
   }
 
@@ -63,7 +61,7 @@ class Menu extends Toggle {
    * В методе используется делегирование событий c помощью метода @namespace menuListEvent.
    */
   removeStyle() {
-    this.menuList.addEventListener("click", (e) => {
+    this.menuList.addEventListener("click", () => {
       this.menuList.classList.remove(this.menuOpen);
       this.overlay.classList.remove(this.overlayShow);
     });
