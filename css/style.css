@@ -595,8 +595,7 @@ a {
   -webkit-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
 }
-.header {
-  min-height: 100vh;
+.no-webp .header {
   background: -webkit-gradient(
       linear,
       left top,
@@ -605,14 +604,17 @@ a {
       color-stop(51.04%, rgba(45, 52, 60, 0.38)),
       color-stop(92.19%, #242b33)
     ),
-    url("../images/header-bg.webp");
+    url("../images/header-webp.jpg");
   background: linear-gradient(
       180deg,
       #242b33 11.98%,
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url("../images/header-bg.webp");
+    url("../images/header-webp.jpg");
+}
+.header {
+  min-height: 100vh;
 }
 .header__inner {
   padding-top: 30px;
@@ -994,6 +996,12 @@ svg {
   .map {
     padding: 150px 0;
   }
+  .appartments__img {
+    width: 100%;
+  }
+  .appartments__text {
+    font-size: 18px;
+  }
   .video__icon {
     width: 80px;
     height: 80px;
@@ -1041,10 +1049,6 @@ svg {
   .testimonials__text {
     font-size: 14px;
   }
-  .appartments__img {
-    max-width: 300px;
-    max-height: 200px;
-  }
   .appartments__text {
     font-size: 18px;
   }
@@ -1060,4 +1064,22 @@ svg {
   .cta-form {
     padding-bottom: 90px;
   }
+}
+.webp .header {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(11.98%, #242b33),
+      color-stop(51.04%, rgba(45, 52, 60, 0.38)),
+      color-stop(92.19%, #242b33)
+    ),
+    url(../images/header-webp.webp);
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url(../images/header-webp.webp);
 }
