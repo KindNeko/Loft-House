@@ -1,3 +1,4 @@
+# файлы для игнора
 node_modules
 package-lock.json
 project.zip
