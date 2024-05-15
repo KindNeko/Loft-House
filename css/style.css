@@ -993,9 +993,15 @@ svg {
   .title-content {
     font-size: 30px;
   }
-  .testimonials__text {
-	font-size: 16px;
+	
+  .testimonials__item {
+    margin: 0 auto;
   }
+  .testimonials__text {
+    font-size: 16px;
+    max-width: 124px;
+  }
+	
   .cta {
     padding: 150px 0;
   }
