@@ -29,29 +29,35 @@ class Menu extends Toggle {
   }
 
   /**
-   * @namespace smoothScrolling - метод плавного скролла при клике на пункты меню.
+   * @namespace smoothScrolling - метод реализующий делегирование событий при клике на пункты меню для метода @namespace scroll.
    * В методе используется делегирование событий
-   * Для делегирования я добавил слушатель событий клика на menuList.
-   * e.target - получение элементов на которые сработало событие.
+   * elem.target - получение элементов на которые сработало событие.
    * С помощью проверки нахожу элементы с нужным классом.
    */
-  smoothScrolling() {
+  smoothScrolling(element) {
+    if (element.target.classList.contains("menu__link")) {
+      const href = element.target.getAttribute("href");
+      return document
+        .querySelector(href)
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  scroll() {
     this.menuList.addEventListener("click", (e) => {
-      if (e.target.classList.contains("menu__link")) {
-        const href = e.target.getAttribute("href");
-        document.querySelector(href).scrollIntoView({ behavior: "smooth" });
-      }
+      e.preventDefault();
+      this.smoothScrolling(e);
     });
   }
 
   /**
-   * @namespace removeStyle - метод скрывающий меню-бургер при клике на пункты меню.
+   * @namespace removeStyles - метод скрывающий меню-бургер при клике на пункты меню.
    * В методе используется делегирование событий
    * Для делегирования я добавил слушатель событий клика на menuList.
    * e.target - получение элементов на которые сработало событие.
    * С помощью проверки нахожу элементы с нужным классом.
    */
-  removeStyle() {
+
+  removeStyles() {
     this.menuList.addEventListener("click", (e) => {
       if (e.target.classList.contains("menu__link")) {
         this.menuList.classList.remove(this.menuOpen);
@@ -63,8 +69,8 @@ class Menu extends Toggle {
 const menuBtn = new Menu(Menu.listItem, Menu.openItem);
 menuBtn.toggle(".menu__btn");
 
-new Menu().smoothScrolling();
-new Menu().removeStyle();
+new Menu().scroll();
+new Menu().removeStyles();
 
 class Accordeon extends Toggle {
   accordeonList = document.querySelectorAll(".accordeon__faq");
