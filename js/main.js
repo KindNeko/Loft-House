@@ -29,49 +29,42 @@ class Menu extends Toggle {
   }
 
   /**
-   * @namespace menuListEvent - метод реализующий делегирование событий
+   * @namespace smoothScrolling - метод плавного скролла при клике на пункты меню.
+   * В методе используется делегирование событий
    * Для делегирования я добавил слушатель событий клика на menuList.
    * e.target - получение элементов на которые сработало событие.
    * С помощью проверки нахожу элементы с нужным классом.
-   * @param callback - параметр который принимает метод с использованием события на дочерние элементы menuList.
    */
-  menuListEvent(callback) {
+  smoothScrolling() {
     this.menuList.addEventListener("click", (e) => {
-      e.preventDefault();
       if (e.target.classList.contains("menu__link")) {
-        callback(e);
+        const href = e.target.getAttribute("href");
+        document.querySelector(href).scrollIntoView({ behavior: "smooth" });
       }
     });
   }
 
   /**
-   * @namespace smoothScrolling - метод плавного скролла при клике на пункты меню.
-   * В методе используется делегирование событий c помощью метода @namespace menuListEvent.
-   */
-  smoothScrolling() {
-    this.menuList.addEventListener("click", (e) => {
-      e.preventDefault();
-      const href = e.target.getAttribute("href");
-      document.querySelector(href).scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  /**
    * @namespace removeStyle - метод скрывающий меню-бургер при клике на пункты меню.
-   * В методе используется делегирование событий c помощью метода @namespace menuListEvent.
+   * В методе используется делегирование событий
+   * Для делегирования я добавил слушатель событий клика на menuList.
+   * e.target - получение элементов на которые сработало событие.
+   * С помощью проверки нахожу элементы с нужным классом.
    */
   removeStyle() {
-    this.menuList.addEventListener("click", () => {
-      this.menuList.classList.remove(this.menuOpen);
-      this.overlay.classList.remove(this.overlayShow);
+    this.menuList.addEventListener("click", (e) => {
+      if (e.target.classList.contains("menu__link")) {
+        this.menuList.classList.remove(this.menuOpen);
+        this.overlay.classList.remove(this.overlayShow);
+      }
     });
   }
 }
 const menuBtn = new Menu(Menu.listItem, Menu.openItem);
 menuBtn.toggle(".menu__btn");
 
-new Menu().menuListEvent(new Menu().smoothScrolling());
-new Menu().menuListEvent(new Menu().removeStyle());
+new Menu().smoothScrolling();
+new Menu().removeStyle();
 
 class Accordeon extends Toggle {
   accordeonList = document.querySelectorAll(".accordeon__faq");
