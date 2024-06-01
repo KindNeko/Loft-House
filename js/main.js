@@ -1,7 +1,5 @@
 "use strict";
 class Toggle {
-  list;
-  open;
   constructor(list, open) {
     this.list = list;
     this.open = open;
@@ -16,11 +14,6 @@ class Menu extends Toggle {
   menuList = document.querySelector(".menu__list");
   menuOpen = "menu__list--open";
   menuLink = document.querySelectorAll(".menu__link");
-  constructor(list, open) {
-    super();
-    this.list = list;
-    this.open = open;
-  }
   toggle(selector) {
     document.querySelector(selector).addEventListener("click", () => {
       this.menuList.classList.toggle(this.menuOpen);
@@ -75,11 +68,6 @@ new Menu().removeStyles();
 class Accordeon extends Toggle {
   accordeonList = document.querySelectorAll(".accordeon__faq");
   accordeonOpen = "active";
-  constructor(list, open) {
-    super();
-    this.list = list;
-    this.open = open;
-  }
 
   toggle() {
     this.accordeonList.forEach((faq) =>
