@@ -12,7 +12,7 @@
 		<h4>Что используется:</h4>
 		<ol id="residential-complex__list">
 			<li id="residential-complex__item">
-			 Результат - <a href="[https://github.com/KindNeko/gulp](https://kindneko.github.io/Loft-House/)" target="_blank">ссылка на готовый проект</a> 
+			 Результат - <a href="https://kindneko.github.io/Loft-House/" target="_blank">ссылка на готовый проект</a> 
 			</li>
 			<li id="residential-complex__item">
 			 Gulp - <a href="https://github.com/KindNeko/gulp" target="_blank">ссылка на мою сборку Gulp</a> 
